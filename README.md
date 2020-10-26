@@ -1,4 +1,4 @@
-# 用来测试grpc服务
+# 测试grpc服务
 
 ## 打包
 make linux
