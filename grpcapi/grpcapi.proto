@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package greet;
+option go_package="grpcapi";
+
+
+message GrpcRequest {
+    string input = 1;
+}
+
+message GrpcResponse {
+    string response = 1;
+}
+
+service GrpcService{
+  
+    rpc grpcService(GrpcRequest) returns (GrpcResponse) {};
+
+}
