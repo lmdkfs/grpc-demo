@@ -10,6 +10,6 @@ test:
 	go tool cover -html=cover.out -o test.html
 
 docker:
-	docker build -t ${PROJECT}:${VERSION} .
+	docker build --plateform linux/amd64,linux/arm64-t ${PROJECT}:${VERSION} .
 clean:
 	cd bin && if [ -f ${BINARY} ] ; then rm  ${BINARY} ; fi

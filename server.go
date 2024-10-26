@@ -10,6 +10,7 @@ import (
 	"os"
 
 	"grpc-demo/grpcapi"
+
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/reflection"
 )
@@ -45,7 +46,7 @@ func main() {
 		port = "50051"
 	}
 
-	lis, err := net.Listen("tcp", hostname+":"+port)
+	lis, err := net.Listen("tcp", "0.0.0.0"+":"+port)
 	if err != nil {
 		log.Fatalf("Failed to listen: %v", err)
 	}
