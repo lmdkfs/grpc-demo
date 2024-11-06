@@ -30,3 +30,4 @@ make docker
 # changelog
 
 add grpcurl
+add dockerfile
