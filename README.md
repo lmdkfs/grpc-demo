@@ -31,3 +31,4 @@ make docker
 
 add grpcurl
 add dockerfile
+test
